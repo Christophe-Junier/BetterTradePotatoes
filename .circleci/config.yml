@@ -48,7 +48,7 @@ jobs:
       - ruby/rspec-test
       - ruby/rubocop-check
       - store_artifacts:
-        path: coverage
+          path: coverage
 
 workflows:
   version: 2
