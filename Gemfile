@@ -45,6 +45,7 @@ group :development, :test do
   gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'main'
   gem 'rspec-rails'
   gem 'rubocop-rails', require: false
+  gem 'dotenv-rails'
 end
 
 group :development do
