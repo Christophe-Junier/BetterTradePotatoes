@@ -1,3 +1,7 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Christophe-Junier/BetterTradePotatoes/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Christophe-Junier/BetterTradePotatoes/tree/main)
+
+
+
 # README
 
 This README would normally document whatever steps are necessary to get the
