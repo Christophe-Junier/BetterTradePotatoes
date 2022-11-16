@@ -11,7 +11,7 @@ Rails.application.configure do
   config.cache_classes = false
 
   # Do not eager load code on boot.
-  config.eager_load = false
+  config.eager_load = true
 
   # Show full error reports.
   config.consider_all_requests_local = true
@@ -23,9 +23,9 @@ Rails.application.configure do
   # Run rails dev:cache to toggle caching.
   if Rails.root.join('tmp/caching-dev.txt').exist?
     config.cache_store = :memory_store
-    config.public_file_server.headers = {
-      'Cache-Control' => "public, max-age=#{2.days.to_i}"
-    }
+    config.public_file_server.headers = { 'Cache-Control' => "public, max-age=#{2.days.to_i}" }
+    config.action_controller.perform_caching = true
+    config.action_controller.enable_fragment_cache_logging = true
   else
     config.action_controller.perform_caching = false
 
@@ -64,6 +64,10 @@ Rails.application.configure do
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 
+  config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
   # Log to STDOUT
   Rails.logger = Logger.new($stdout)
+
+  Rails.application.routes.default_url_options[:host] = 'localhost:3000'
 end

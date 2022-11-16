@@ -2,7 +2,9 @@
 
 # Main API controller
 class ApplicationController < ActionController::API
-  def find_resource
-    raise
+  private
+
+  def not_found
+    render json: { error: 'resource not found' }, status: :not_found
   end
 end
