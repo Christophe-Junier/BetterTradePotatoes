@@ -17,7 +17,11 @@ module Api
       private
 
       def find_resource
-        raise
+        if (@vegetable = Vegetable.find_by(name: params[:name].downcase)).present?
+          render json: Api::V1::VegetableSerializer.new(@vegetable).serializable_hash.to_json, status: :ok
+        else
+          render json: { error: 'resource not found' }, status: :not_found
+        end
       end
     end
   end
