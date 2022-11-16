@@ -1,44 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/christophejunier/Desktop/BetterTradePotatoes/app/models/vegetable.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/christophejunier/Desktop/BetterTradePotatoes/app/models/application_record.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/christophejunier/Desktop/BetterTradePotatoes/app/channels/application_cable/channel.rb": {
         "lines": [
           null,
@@ -63,10 +25,46 @@
         "branches": {
         }
       },
+      "/Users/christophejunier/Desktop/BetterTradePotatoes/app/controllers/api/v1/vegetables_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/Users/christophejunier/Desktop/BetterTradePotatoes/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
           0,
           0
         ],
@@ -99,8 +97,81 @@
         ],
         "branches": {
         }
+      },
+      "/Users/christophejunier/Desktop/BetterTradePotatoes/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/christophejunier/Desktop/BetterTradePotatoes/app/models/price.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/christophejunier/Desktop/BetterTradePotatoes/app/models/vegetable.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/christophejunier/Desktop/BetterTradePotatoes/app/serializers/api/v1/vegetable_serializer.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1668600749
+    "timestamp": 1668608360
   }
 }
