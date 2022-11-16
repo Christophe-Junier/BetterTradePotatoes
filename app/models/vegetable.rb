@@ -15,6 +15,8 @@ class Vegetable < ApplicationRecord
   validates :daily_trade_limit, presence: { message: 'must be given please' }
   validates :current_stock, numericality: { greater_than_or_equal_to: 0 }
 
+  # Relations
+
   # Scopes
 
   # Class methods
