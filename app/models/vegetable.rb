@@ -9,7 +9,7 @@
 class Vegetable < ApplicationRecord
   # Validations
   validates :name, presence: { message: 'must be given please' }, uniqueness: { message: 'must be uniq please' }
-  validates :daily_trade_limit, presence: { message: 'must be given please' }
+  validates :daily_trade_limit, presence: { message: 'must be given please' }, numericality: { greater_than_or_equal_to: 0 }
   validates :current_stock, numericality: { greater_than_or_equal_to: 0 }
 
   # Relations
