@@ -6,7 +6,6 @@
 # t.datetime "created_at", null: false
 # t.datetime "updated_at", null: false
 # t.index ["name"], name: "unique_name", unique: true
-
 class Vegetable < ApplicationRecord
   # Validations
   validates :name, presence: { message: 'must be given please' }, uniqueness: { message: 'must be uniq please' }
@@ -17,7 +16,15 @@ class Vegetable < ApplicationRecord
 
   # Scopes
 
+  # Callbacks
+  before_validation :ensure_name_is_downcase
+
+  private
+
   # Class methods
 
   # Instance methods
+  def ensure_name_is_downcase
+    self.name = name.downcase
+  end
 end

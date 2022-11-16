@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :vegetable do
-    name { 'Potatoe' }
+    name { 'potatoe' }
     daily_trade_limit { 100 }
   end
 end
