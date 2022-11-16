@@ -10,7 +10,6 @@
 # No id on this class, vegetable uniqueness and index are defined on name
 
 class Vegetable < ApplicationRecord
-
   # Validations
   validates :name, presence: { message: 'must be given please' }, uniqueness: { message: 'must be uniq please' }
   validates :daily_trade_limit, presence: { message: 'must be given please' }
