@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_16_111303) do
   create_table "vegetables", force: :cascade do |t|
     t.string "name", null: false
     t.integer "daily_trade_limit", null: false
-    t.integer "current_stock"
+    t.integer "current_stock", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "unique_name", unique: true
