@@ -7,6 +7,6 @@
 
 Rails.logger.info '===== Generating Vegetable Seeds ====='
 Vegetable.create(
-  name: 'Potatoe',
+  name: 'potatoe',
   daily_trade_limit: 100
 )
