@@ -82,9 +82,15 @@ GEM
       simplecov (>= 0.15, < 0.22)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
+    daemons (1.4.1)
     debug (1.5.0)
       irb (>= 1.3.6)
       reline (>= 0.2.7)
+    delayed_job (4.1.11)
+      activesupport (>= 3.0, < 8.0)
+    delayed_job_active_record (4.1.7)
+      activerecord (>= 3.0, < 8.0)
+      delayed_job (>= 3.0, < 5)
     diff-lcs (1.5.0)
     digest (3.1.0)
     docile (1.4.0)
@@ -106,6 +112,8 @@ GEM
     irb (1.4.1)
       reline (>= 0.3.0)
     json (2.6.2)
+    jsonapi-serializer (2.2.0)
+      activesupport (>= 4.2)
     loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -234,10 +242,13 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   codecov
+  daemons
   debug
+  delayed_job_active_record
   dotenv-rails
   factory_bot_rails
   faker!
+  jsonapi-serializer
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.3)
