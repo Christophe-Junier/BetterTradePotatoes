@@ -26,7 +26,7 @@ module Api
       end
 
       def check_value_date_format
-        @value_date = params[:value_date].to_date
+        @value_date = (params[:value_date] || params[:price_value_date]).to_date
       rescue StandardError
         unprocessable_entity(message: 'invalid date, please use a YYYY-MM-DD format')
       end

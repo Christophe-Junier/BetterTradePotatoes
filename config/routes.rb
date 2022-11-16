@@ -8,7 +8,10 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :vegetables, param: :name do
-        resources :prices, param: :value_date
+        resources :prices, param: :value_date do
+          get 'best_gain', controller: :best_gain, action: :index
+          get 'worst_loss', controller: :worst_loss, action: :index
+        end
       end
     end
   end
