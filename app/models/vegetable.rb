@@ -7,8 +7,6 @@
 # t.datetime "updated_at", null: false
 # t.index ["name"], name: "unique_name", unique: true
 
-# No id on this class, vegetable uniqueness and index are defined on name
-
 class Vegetable < ApplicationRecord
   # Validations
   validates :name, presence: { message: 'must be given please' }, uniqueness: { message: 'must be uniq please' }
