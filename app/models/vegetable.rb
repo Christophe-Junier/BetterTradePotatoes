@@ -7,10 +7,18 @@
 # t.datetime "updated_at", null: false
 # t.index ["name"], name: "unique_name", unique: true
 
-# No id on this class, vegetable uniqueness and index are defined on name using unique_name
+# No id on this class, vegetable uniqueness and index are defined on name
 
 class Vegetable < ApplicationRecord
+
+  # Validations
   validates :name, presence: { message: 'must be given please' }, uniqueness: { message: 'must be uniq please' }
-  validates :daily_trade_limit, daily_trade_limit: { message: 'must be given please' }
+  validates :daily_trade_limit, presence: { message: 'must be given please' }
   validates :current_stock, numericality: { greater_than_or_equal_to: 0 }
+
+  # Scopes
+
+  # Class methods
+
+  # Instance methods
 end
