@@ -1,4 +1,4 @@
-[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop) [![Ruby Style Guide](https://img.shields.io/badge/code_style-community-brightgreen.svg)](https://rubystyle.guide) [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Christophe-Junier/BetterTradePotatoes/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Christophe-Junier/BetterTradePotatoes/tree/main)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop) [![Ruby Style Guide](https://img.shields.io/badge/code_style-community-brightgreen.svg)](https://rubystyle.guide) [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Christophe-Junier/BetterTradePotatoes/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Christophe-Junier/BetterTradePotatoes/tree/main) [![codecov](https://codecov.io/gh/Christophe-Junier/BetterTradePotatoes/branch/main/graph/badge.svg?token=2YNO20SJJ6)](https://codecov.io/gh/Christophe-Junier/BetterTradePotatoes)
 
 
 
