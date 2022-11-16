@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :vegetable do
-    name { 'potatoe' }
-    daily_trade_limit { 100 }
+    name { Faker::Food.vegetables }
+    daily_trade_limit { Faker::Number.between(from: 1, to: 100) }
   end
 end

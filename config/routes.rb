@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   # root "articles#index"
   namespace :api do
     namespace :v1 do
-      resources :vegetables, param: :name
+      resources :vegetables, param: :name do
+        resources :prices, param: :value_date
+      end
     end
   end
 end

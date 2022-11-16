@@ -10,3 +10,12 @@ Vegetable.create(
   name: 'potatoe',
   daily_trade_limit: 100
 )
+
+Rails.logger.info '===== Generating Price Seeds ====='
+50.times do
+  Price.create(
+    price: Faker::Number.number(digits: 5),
+    value_date: Faker::Date.between(from: '2022-11-15', to: '2022-11-30'),
+    vegetable_id: Vegetable.last.id
+  )
+end
