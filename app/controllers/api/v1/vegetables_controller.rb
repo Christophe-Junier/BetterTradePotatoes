@@ -6,9 +6,13 @@ module Api
     class VegetablesController < ApplicationController
       before_action :find_resource, only: %w[show]
 
-      def index; end
+      def index
+        render json: Api::V1::VegetableSerializer.new(Vegetable.all).serializable_hash.to_json, status: :ok
+      end
 
-      def show; end
+      def show
+        raise
+      end
 
       private
 

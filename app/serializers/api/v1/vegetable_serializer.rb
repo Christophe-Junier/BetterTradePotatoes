@@ -5,6 +5,7 @@ module Api
     class VegetableSerializer
       include JSONAPI::Serializer
 
+      set_id :name
       attributes :name, :daily_trade_limit, :current_stock
     end
   end
