@@ -15,7 +15,15 @@ module Api
         return render json: { error: 'not enought datum to compute gain' }, status: :ok if @prices.size < 2
 
         best_unit_price = Price.profit_calculation(prices: @prices)
-        data = {
+        data = compute_data(best_unit_price)
+
+        render json: data.to_json, status: :ok
+      end
+
+      private
+
+      def compute_data(best_unit_price)
+        {
           best_margin_per_unit: best_unit_price.last.to_f / 100,
           best_total_margin: (best_unit_price.last.to_f * @vegetable.daily_trade_limit.to_f) / 100,
           buying_date: best_unit_price.first,
@@ -24,8 +32,6 @@ module Api
             value_date: best_unit_price.first...
           )&.value_date
         }
-
-        render json: data.to_json, status: :ok
       end
     end
   end

@@ -22,7 +22,9 @@ class Price < ApplicationRecord
     value_hash = {}
     prices.each do |price|
       value_hash[price.value_date] = []
-      value_hash[price.value_date] << difference_array(compute_price: price.price, prices: prices.where(value_date: price.value_date...).pluck(:price))
+      value_hash[price.value_date] << difference_array(compute_price: price.price,
+                                                       prices: prices.where(value_date: price.value_date...)
+                                                                     .pluck(:price))
     end
     calculation_type == :profit ? hashes_array_max_value(value_hash) : hashes_array_min_value(value_hash)
   end
